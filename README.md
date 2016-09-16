@@ -69,7 +69,7 @@ variable | value
 a | 1
 b | ~~2~~ 3
 f | lambda "f" (func obj)
-:new: c | 4
+:bangbang: c | 4
 
 ```javascript
 function f(z){
@@ -97,9 +97,9 @@ variable | value
 z | 1
 this | *
 arguments | psuedoArr[1]
-:new: d | 5
-:new: e | 6
-g | lambda "g"
+:bangbang: d | 5
+:bangbang: e | 6
+g | lambda "g" (func obj)
 
 global scope
 
@@ -109,7 +109,7 @@ a | 1
 b | ~~2~~ 3
 f | lambda "f" (func obj)
 c | 4
-:new: e | 6
+:bangbang: e | 6
 
 So now we can execute G!
 
@@ -123,7 +123,7 @@ function g() {
 Gs scope
 variable | value
 ------------ | -------------
-:new: e | 0
+:bangbang: e | 0
 d | ~~5~~ 10
 
 So now, what happens when f(1) was run? well it basically breaks down to z*d, z = 1 d = 10 1*10 = 10!
