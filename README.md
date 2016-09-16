@@ -11,7 +11,7 @@ If you're anything like me, you keep getting this question during your interview
 * Global vars
 
 
-## Closure & Scope example (breaking down how JavaScript works..)
+# JavaScript Scope, break down of how it works!
 
 We are going to break down step by step what happens in this code example.
 
@@ -132,9 +132,9 @@ Well it basically breaks down to : z * d
 z = 1  & d = 10 
 1 * 10 = 10!
 
-Ending Vairiable Scopes:
+# Scope after running
 
-## Global
+### Global
 
 variable | value
 ------------ | -------------
@@ -144,7 +144,7 @@ f | lambda "f" (func obj)
 c | 4
 e | 6
 
-## Local F function
+### Local F function
 
 variable | value
 ------------ | -------------
@@ -155,7 +155,7 @@ d | 5
 e | 6 (not accessible from g) 
 g | lambda "g" (func obj)
 
-## Local variable g function
+### Local variable g function
 
 variable | value
 ------------ | -------------
