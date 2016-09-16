@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>database</title>
+    <script src="customerDatabaseClass.js" type="text/javascript"></script>
+</head>
+<body>
+<form action="">
+    <div>
+        <h1>Experiments with Database Objects</h1>
+    </div>
+    <div>
+        <button type="submit" id="showData">Show Data</button> <button type="submit" id="addData">Add Data</button>
+    </div>
+</form>
+
+<script>
+    var     showDataButton = document.getElementById('showData'),
+            addDataButton = document.getElementById('addData');
+
+    database.constructor.showAllData = function(){
+
+    };
+
+            showDataButton.onclick = function(){
+                database.showAllData();
+            };
+
+            addDataButton.onclick = function(){
+
+            };
+
+
+</script>
+
+</body>
+</html>
