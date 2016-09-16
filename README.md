@@ -120,12 +120,44 @@ function g() {
           return d;
 }
 ```
-Gs scope
+
 variable | value
 ------------ | -------------
 :bangbang: e | 0
 d | ~~5~~ 10
 
-So now, what happens when f(1) was run? well it basically breaks down to z*d, z = 1 d = 10 1*10 = 10!
+So now, what happens when f(1) was run? 
 
-Horray!
+Well it basically breaks down to : z * d 
+z = 1  & d = 10 
+1 * 10 = 10!
+
+Ending Vairiable Scopes:
+
+## Global
+
+variable | value
+------------ | -------------
+a | 1
+b | 3
+f | lambda "f" (func obj)
+c | 4
+e | 6
+
+## Local F function
+
+variable | value
+------------ | -------------
+z | 1
+this | *
+arguments | psuedoArr[1]
+d | 5
+e | 6 (not accessible from g) 
+g | lambda "g" (func obj)
+
+## Local variable g function
+
+variable | value
+------------ | -------------
+e | 0
+d | 10
