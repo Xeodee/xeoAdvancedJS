@@ -42,6 +42,7 @@ The first thing that happens when this code is run is 'Hoisting'. Hoisting is th
 
 It comes across 3 variables, a b and f
 global or window.var
+
 variable | value
 ------------ | -------------
 a | 1
@@ -51,6 +52,7 @@ f | lambda "f" (func obj)
 Now we have this and f will execute, so we have to do some hoisting..
 
 local scope execution of f
+
 variable | value
 ------------ | -------------
 z | 1
@@ -61,6 +63,7 @@ g | lambda "g"
 Now we are at line b=3 which changes the global for b, then c=4.. since it doesn't have var in front of it, c becomes a global vairable as long as we are not in strict mode.
 
 global scope
+
 variable | value
 ------------ | -------------
 a | 1
@@ -88,6 +91,7 @@ function f(z){
 Now we are at var d = 5. Since var was declared it is straight foward. d is already in this local scope of f so we just assign the value 5. Here is where it gets interesting, e = 6. Since we didn't write var before e=6; it now goes up the scope chain to global.
 
 local scope execution of f
+
 variable | value
 ------------ | -------------
 z | 1
@@ -98,6 +102,7 @@ e | 6
 g | lambda "g"
 
 global scope
+
 variable | value
 ------------ | -------------
 a | 1
