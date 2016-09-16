@@ -1,4 +1,4 @@
-# xeoAdvancedJS
+# JavaScript Concepts, Core runtime to Advanced..
 ### Closure examples and best JavaScript practices.
 
 #### Why?
@@ -161,3 +161,9 @@ variable | value
 ------------ | -------------
 e | 0
 d | 10
+
+
+# TODO
+* Create a good closure example js
+* Explain some Object Oriented methodology
+* Create hoisting example
