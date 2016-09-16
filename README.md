@@ -97,8 +97,8 @@ variable | value
 z | 1
 this | *
 arguments | psuedoArr[1]
-d | 5
-e | 6
+:new: d | 5
+:new: e | 6
 g | lambda "g"
 
 global scope
@@ -109,7 +109,7 @@ a | 1
 b | ~~2~~ 3
 f | lambda "f" (func obj)
 c | 4
-e | 6
+:new: e | 6
 
 So now we can execute G!
 
@@ -123,8 +123,8 @@ function g() {
 Gs scope
 variable | value
 ------------ | -------------
-e | 0
-d | 10
+:new: e | 0
+d | ~~5~~ 10
 
 So now, what happens when f(1) was run? well it basically breaks down to z*d, z = 1 d = 10 1*10 = 10!
 
